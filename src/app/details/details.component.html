@@ -1,0 +1,41 @@
+<!-- <pre>
+    {{customer|json}}
+</pre>
+ -->
+
+ <div class="container">
+    <div class="card my-3">
+        <div class="card-header bg-info-emphasis">
+          <h3>{{customer.name}}</h3>
+        </div>
+        <div class="card-body row ">
+            <div class="col-2 border-end">
+               <h5 class="text-center"> Customer Details</h5>
+               <div><span class="me-2"><i class="fa-solid fa-phone"></i></span>{{customer.phone}}</div>
+               <div><span class="me-2"><i class="fa-solid fa-envelope"></i></span>{{customer.email}}</div>
+            </div>
+            <div class="col-2 border-end">
+                <h5>Odometer</h5>
+                <div><span class="me-2"><i class="fa-solid fa-gauge"></i></span>{{customer.running_km}}</div>
+            </div>
+            <div class="col-2 border-end">
+                <h5>Date</h5>
+                <div class="my-3"><span class="me-2"><i class="fa-solid fa-calendar-days"></i></span>{{customer.created_date|date}}</div>
+            </div>
+            <div class="col-2 border-end">
+                <h5>Vehicle Number</h5>
+                <div><span class="me-2"><i class="fa-solid fa-car "></i></span>{{customer.vehicle_no}}</div>
+            </div>
+            <div class="col-2 border-end">
+                <h5>Total</h5>
+                <div><span class="me-2"><i class="fa-solid fa-indian-rupee-sign"></i></span></div>
+            </div>
+            <div class="col-2">
+                <h5>Status</h5>
+                Pending
+                
+            </div>
+      
+        </div>
+      </div>
+</div>
